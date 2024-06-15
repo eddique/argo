@@ -40,10 +40,10 @@ int build_bin()
 }
 int install_bin()
 {
-    printf("\x1b[38;5;39mbuilding project...\x1b[0m\n");
+    printf("\x1b[38;5;39mbuilding project...\x1b[0m\n\n");
     system("make clean && make");
 
-    printf("\x1b[38;5;39minstalling binary...\x1b[0m\n");
+    printf("\n\x1b[38;5;39minstalling binary...\x1b[0m\n\n");
     char *home = getenv("HOME");
     char dir[512];
     sprintf(dir, "%s/.argo", home);
@@ -69,7 +69,7 @@ int install_bin()
     }
     if (chmod(dest, S_IRWXU) != 0)
         return -1;
-    printf("\x1b[38;5;39madded %s to $PATH\x1b[0m\n", binary);
+    printf("\x1b[38;5;39madded %s to $PATH\x1b[0m\n\n", binary);
     return 0;
 }
 
@@ -95,5 +95,6 @@ int list_binaries()
     sprintf(dir, "%s/.argo", home);
     printf("\x1b[38;5;39minstalled argo binaries:\x1b[0m\n\n");
     list_entries(dir);
+    printf("\n");
     return 0;
 }

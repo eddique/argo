@@ -10,8 +10,8 @@
 
 static void git_init(char *buffer, const char *project_name)
 {
-    buffer = realloc(buffer, sizeof(char) * strlen(project_name) + 28);
-    snprintf(buffer, sizeof(char) * (strlen(project_name) + 28), "cd %s && git init > /dev/null", project_name);
+    buffer = realloc(buffer, sizeof(char) * strlen(project_name) + 33);
+    snprintf(buffer, sizeof(char) * (strlen(project_name) + 33), "cd %s && git init > /dev/null 2>&1", project_name);
     system(buffer);
 }
 
@@ -180,7 +180,7 @@ int scaffold(char *project_name)
 
     free(buffer);
 
-    printf("\x1b\n[38;5;240mnext steps:\n\x1b[0m");
+    printf("\n\x1b[38;5;240mnext steps:\n\x1b[0m");
     printf("    cd %s\n", project_name);
     printf("    argo run\n");
 
