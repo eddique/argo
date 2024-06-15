@@ -14,7 +14,7 @@
 ### Format
 
 ```sh
-argo [cmd] <oprion>
+argo [cmd] <option>
 ```
 
 ### Commands
