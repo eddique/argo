@@ -24,7 +24,7 @@ void print_usage()
     printf("    [uninstall] <args> # uninstalls an argo manaaged binary\n");
     printf("    [ls] # lists argo manaaged binaries\n");
     printf("    [--version] # displays installed argo version\n");
-    printf("    [--help] # displays usage menu\n");
+    printf("    [--help] # displays usage menu\n\n");
 }
 
 int main(int argc, char *argv[])
