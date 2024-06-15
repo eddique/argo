@@ -180,9 +180,9 @@ int scaffold(char *project_name)
 
     free(buffer);
 
-    printf("\n\x1b[38;5;240mnext steps:\n\x1b[0m");
+    printf("\n\x1b[38;5;240mnext steps:\x1b[0m\n\n");
     printf("    cd %s\n", project_name);
-    printf("    argo run\n");
+    printf("    argo run\n\n");
 
     return 0;
 }
