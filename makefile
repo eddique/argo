@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -g -Wall -Iinclude # -Os -ffunction-sections -fdata-sections
-LDFLAGS = # -Wl,--gc-sections
+LDFLAGS = -lz # -Wl,--gc-sections
 SRC_DIR = src
 OBJ_DIR = obj
 BIN_DIR = bin

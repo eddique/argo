@@ -7,5 +7,6 @@ int build_bin();
 int install_bin();
 int uninstall_bin(int argc, char *argv[]);
 int list_binaries();
+int compress_file(int argc, char *argv[]);
 void print_help(int show_logo);
 #endif

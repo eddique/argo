@@ -34,6 +34,8 @@ int main(int argc, char *argv[])
         uninstall_bin(argc, argv);
     else if (matches_arg(cmd, "ls") == 1)
         list_binaries();
+    else if (matches_arg(cmd, "compress") == 1)
+        compress_file(argc, argv);
     else if (matches_arg(cmd, "--version") == 1)
         printf("\x1b[38;5;39margo v0.1.0\x1b[0m\n");
     else if (matches_arg(cmd, "--help") == 1)
