@@ -27,7 +27,8 @@ argo [build] <args> # builds the application
 argo [run] <args> # runs the application with supplied args
 argo [install] <args> # installs the argo managed binary
 argo [uninstall] <bin_name> # uninstalls an argo manaaged binary
-argo [ls] # lists argo manaaged binaries
+argo [ls] # lists argo managed binaries
+argo [compress] # compresses a file and creates a C header with the data in hexadecimal format
 argo [--version] # prints installed argo version
 argo [--help] # displays usage menu
 ```
@@ -41,6 +42,7 @@ argo run
 argo install
 argo ls
 argo uninstall project
+argo compress index.html
 cd ..
 rm -rf project
 argo --version
